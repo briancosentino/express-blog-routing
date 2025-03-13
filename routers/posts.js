@@ -14,7 +14,7 @@ router.get('/', (req, res)=>{
 })
 //show
 router.get('/:id', (req, res)=>{
-    res.json(postsList[req.params.id - 1])
+    res.json(postsList[req.params.id - 1]) //to pick the position we put in URI
 })
 
 //store
